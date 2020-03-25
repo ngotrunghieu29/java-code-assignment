@@ -1,7 +1,6 @@
 package com.mydomain.animal;
 
-public class Animal {
-    void walk() {
-        System.out.println("I am walking");
-    }
+import com.mydomain.animal.behaviour.Walkable;
+
+public abstract class Animal implements Walkable {
 }
