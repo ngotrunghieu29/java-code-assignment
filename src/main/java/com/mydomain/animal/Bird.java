@@ -1,11 +1,8 @@
 package com.mydomain.animal;
 
-public class Bird extends Animal {
-    void fly() {
-        System.out.println("I am flying");
-    }
+import com.mydomain.animal.behaviour.Flyable;
+import com.mydomain.animal.behaviour.Singable;
 
-    void sing() {
-        System.out.println("I am singing");
-    }
+public class Bird extends Animal implements Flyable, Singable {
+
 }
