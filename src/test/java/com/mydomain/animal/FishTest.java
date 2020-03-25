@@ -12,4 +12,9 @@ class FishTest extends BaseTest {
         Assertions.assertEquals("I am swimming", outContent.toString().trim());
     }
 
+    @Test
+    public void fishCanNotWalk() {
+        Assertions.assertFalse(fish.canWalk());
+    }
+
 }

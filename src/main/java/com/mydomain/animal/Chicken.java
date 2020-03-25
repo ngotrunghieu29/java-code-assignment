@@ -10,4 +10,9 @@ public class Chicken extends Bird {
     public void fly() {
         // do nothing
     }
+
+    @Override
+    public boolean canFly() {
+        return false;
+    }
 }

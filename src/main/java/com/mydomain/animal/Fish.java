@@ -12,4 +12,9 @@ public class Fish extends Animal implements Swimmable {
     public void walk() {
         // do nothing
     }
+
+    @Override
+    public boolean canWalk() {
+        return false;
+    }
 }

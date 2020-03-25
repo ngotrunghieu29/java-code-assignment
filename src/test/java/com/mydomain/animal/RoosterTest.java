@@ -11,4 +11,9 @@ class RoosterTest extends BaseTest {
         rooster.sing();
         Assertions.assertEquals("Cock-a-doodle-doo", outContent.toString().trim());
     }
+
+    @Test
+    public void roosterCanNotFly() {
+        Assertions.assertFalse(rooster.canFly());
+    }
 }

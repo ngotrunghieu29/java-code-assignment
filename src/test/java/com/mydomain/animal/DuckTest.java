@@ -12,8 +12,14 @@ class DuckTest extends BaseTest {
         Assertions.assertEquals("Quack, quack", outContent.toString().trim());
     }
 
+    @Test
     public void duckSwim() {
         duck.swim();
         Assertions.assertEquals("I am swimming", outContent.toString().trim());
+    }
+
+    @Test
+    public void duckCanSwim() {
+        Assertions.assertTrue(duck.canSwim());
     }
 }

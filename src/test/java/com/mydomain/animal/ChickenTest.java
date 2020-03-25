@@ -11,4 +11,9 @@ class ChickenTest extends BaseTest {
         chicken.sing();
         Assertions.assertEquals("Cluck, cluck", outContent.toString().trim());
     }
+
+    @Test
+    public void chickenCanNotFly() {
+        Assertions.assertFalse(chicken.canFly());
+    }
 }
