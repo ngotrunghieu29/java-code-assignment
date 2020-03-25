@@ -23,4 +23,10 @@ class SharkTest extends BaseTest {
         shark.eatOtherFishes();
         Assertions.assertEquals("I am eating other fishes", outContent.toString().trim());
     }
+
+    @Test
+    public void sharkCouldSwim() {
+        shark.swim();
+        Assertions.assertEquals("I am swimming", outContent.toString().trim());
+    }
 }

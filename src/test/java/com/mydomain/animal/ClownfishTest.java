@@ -23,4 +23,10 @@ class ClownfishTest extends BaseTest {
         clownfish.makeJoke();
         Assertions.assertEquals("I am making jokes", outContent.toString().trim());
     }
+
+    @Test
+    public void clownfishCouldSwim() {
+        clownfish.swim();
+        Assertions.assertEquals("I am swimming", outContent.toString().trim());
+    }
 }
