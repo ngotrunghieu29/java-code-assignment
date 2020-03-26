@@ -2,9 +2,8 @@ package com.mydomain.animal.insect;
 
 import com.mydomain.animal.Animal;
 import com.mydomain.animal.behaviour.Flyable;
-import com.mydomain.animal.behaviour.Walkable;
 
-public class Butterfly extends Animal implements Flyable, Walkable {
+public class Butterfly extends Animal implements Flyable {
     private State state;
 
     public Butterfly() {
